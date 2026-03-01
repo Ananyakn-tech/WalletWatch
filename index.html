@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WalletWatch</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="app-header">
+            <div class="logo">Daily Expense <span>Tracker</span></div>
+            <div class="main-stats">
+                
+                <small>Total Monthly Spend</small>
+                <h2 id="month-total">₹0.00</h2>
+            </div>
+        </header>
+        <div class="main-layout">
+            <section class="control-panel">
+                <div class="card stat-row">
+                    <div class="stat">
+                        <span>Today</span>
+                        <strong id="day-total">₹0</strong>
+                    </div>
+                    <div class="stat">
+                        <span>This Week</span>
+                        <strong id="week-total">₹0</strong>
+                    </div>
+                </div>
+                <div class="card chart-card">
+                    <h3>Monthly Analysis</h3>
+                    <canvas id="categoryChart"></canvas>
+                </div>
+                <div class="card form-card">
+                    <h3>NEW TRANSACTION</h3>
+                    <form id="exp-form">
+                        <input type="text" id="desc" placeholder="Expense Name" required>
+                        <input type="number" id="amt" placeholder="Amount (₹)" required>
+                        <select id="category" required>
+                            <option value="" disabled selected>Select Category</option>
+                            <option value="Food">Food</option>
+                            <option value="Bills">Bills</option>
+                            <option value="Education">Education</option>
+                            <option value="Transport">Transport</option>
+                            <option value="Shopping">Shopping</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <button type="submit" class="btn-primary">Record Expense</button>
+                    </form>
+                </div>
+            </section>
+            <section class="history-panel">
+                <div class="card history-card">
+                    <h3>Transaction History</h3>
+                    <div class="list-container">
+                        <ul id="list"></ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
