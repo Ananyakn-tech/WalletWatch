@@ -22,7 +22,7 @@ WalletWatch is a frontend web application designed to help users track and analy
 
 ## Project Purpose
 
-This project was built to practice frontend development concepts such as DOM manipulation, data visualization, and client-side storage handling.
+This project was built to practice frontend development concepts such as DOM manipulation,data visualization and client-side storage handling.
 
 ## Author
 
