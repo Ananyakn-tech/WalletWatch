@@ -26,4 +26,4 @@ This project was built to practice frontend development concepts such as DOM man
 
 ## Author
 
-Ananya K N
+Ananya
